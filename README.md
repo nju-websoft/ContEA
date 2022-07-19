@@ -19,7 +19,7 @@ The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 co
   |- rel_dict   # index for relations
 ```
 
-The test and validation data are changeless in our continual entity alignment setting, and can be found in the first snapshot (under `base/` folder). In the later snapshots (under `batchX` folder), new triples are added into KGs which brings more potential alignment (i.e. new test data).
+The test and validation data are changeless in our continual entity alignment setting, and can be found in the first snapshot (under `base/` folder). In the later snapshots (under `batchX` folder), new triples are added into KGs as well as new potential alignment.
 
 ## Environment
 
@@ -28,15 +28,43 @@ The essential packages and recommened version to run the code:
 - python3 (>=3.7)
 - pytorch (1.11.0+cu113)
 - numpy   (1.21.5)
-- torch-scatter (2.0.9)
+- torch-scatter (2.0.9, better to install using **pip**)
 - scipy  (1.7.3)
 - tabulate  (0.8.9)
 
 ## Run ContEA
 
-We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters are the ones to reproduce the results in paper. To run the demo file, enter `src/` and run
+We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters can reproduce the results in paper. To run the demo script, enter `src/` and run:
 
 ```
 $ bash run.sh
 ```
 
+In our work, we use grid search on ContEA to find optimal hyperparameters. The ranges are:
+
+| Hyperparameter      | Values |
+| :---        |    :----:   |  
+| Entity dimension    | 100       |
+| Relation dimension   | 100      |
+| Batch size (t = 0)   | {512, 1024} |
+| Learning rate (t = 0) | {0.0005, 0.001, 0.01} |
+| Batch size (t > 0) | 512 |
+| Learning rate (t > 0) | 0.001 |
+| Dropout rate | 0.3 |
+| \lambda | 2.0 |
+| Encoder GNN layers | 2 |
+
+## Acknowledgement
+
+
+
+## Citation
+
+```
+@inproceedings{ContEA,
+  title={Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs},
+  author={Wang, Yuxin and Cui, Yuanning and Liu, Wenqiang and Sun, Zequn and Jiang, Yiqiao and Han, Kexin and Hu, Wei},
+  booktitle={ISWC},
+  year={2022}
+}
+```
