@@ -1,6 +1,8 @@
 # ContEA: Continual Entity Alignment
 
-This repository is the official implementation of ContEA, the model proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
+This repository is the official implementation of ContEA, the method proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
+
+![Framework](framework.png)
 
 ## Datasets
 
@@ -40,7 +42,7 @@ We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyp
 $ bash run.sh
 ```
 
-In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity and relation dimension are 100. GNN layer number of encoder is 2. We use grid search on ContEA to find optimal hyperparameters. The ranges/values of important variables are:
+In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity and relation dimension are 100. GNN layer number of the encoder is 2. We use grid search on important hyperparameters to find optimal values. They are:
 
 | Hyperparameter      | Values |
 | :---        |    :----:   |  
@@ -50,9 +52,11 @@ In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity 
 | learning_rate (t > 0) | 0.001 |
 | dropout_rate | 0.3 |
 
+The training on the first snapshot at t = 0 is crucial for overall performance.
+
 ## Acknowledgement
 
-ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow), we thanks their code open-sourced.
+ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow), we thank them for making code open-sourced.
 
 ## Citation
 
