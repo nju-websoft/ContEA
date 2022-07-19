@@ -11,7 +11,7 @@ We construct three incremental cross-lingual ([ZH-EN](https://github.com/nju-web
 The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 consecutive snapshots of a growing KG. 
 
 ```
----- base       # snapshot 0
+ --- base       # snapshot 0
   |- batch2     # snapshot 1
   |- batch3     # snapshot 2
   |- batch4     # snapshot 3
