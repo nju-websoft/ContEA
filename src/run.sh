@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 datasets=('ZH-EN')
-alphas=(0.1)
-betas=(0.1)
+alphas=(0.1)  # better not change
+betas=(0.1)   # better not change
 g=0
-Ms=(500)
+Ms=(500)      # better not change
 saved_path="../saved_model"
 log_path="../logs"
 

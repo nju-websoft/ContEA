@@ -40,23 +40,19 @@ We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyp
 $ bash run.sh
 ```
 
-In our work, we use grid search on ContEA to find optimal hyperparameters. The ranges are:
+In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity and relation dimension are 100. GNN layer number of encoder is 2. We use grid search on ContEA to find optimal hyperparameters. The ranges/values of important variables are:
 
 | Hyperparameter      | Values |
 | :---        |    :----:   |  
-| Entity dimension    | 100       |
-| Relation dimension   | 100      |
-| Batch size (t = 0)   | {512, 1024} |
-| Learning rate (t = 0) | {0.0005, 0.001, 0.01} |
-| Batch size (t > 0) | 512 |
-| Learning rate (t > 0) | 0.001 |
-| Dropout rate | 0.3 |
-| 𝜆 | 2.0 |
-| Encoder GNN layers | 2 |
+| batch_size (t = 0)   | {512, 1024} |
+| batch_size (t > 0) | 512 |
+| learning_rate (t = 0) | {0.0005, 0.001, 0.01} |
+| learning_rate (t > 0) | 0.001 |
+| dropout_rate | 0.3 |
 
 ## Acknowledgement
 
-
+ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow), we thanks their code open-sourced.
 
 ## Citation
 
