@@ -51,7 +51,7 @@ In our work, we use grid search on ContEA to find optimal hyperparameters. The r
 | Batch size (t > 0) | 512 |
 | Learning rate (t > 0) | 0.001 |
 | Dropout rate | 0.3 |
-| \lambda | 2.0 |
+| 𝜆 | 2.0 |
 | Encoder GNN layers | 2 |
 
 ## Acknowledgement
