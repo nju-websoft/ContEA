@@ -1,10 +1,10 @@
 # ContEA: Continual Entity Alignment
 
-This repository is the original implementation of ContEA, the model proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
+This repository is the official implementation of ContEA, the model proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
 
 ## Datasets
 
-We construct three new cross-lingual ([ZH-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/ZH-EN), [JA-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/JA-EN), and [FR-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/FR-EN)) datasets for continual entity alignment task setting, in which the to-be-aligned KGs are growing independently over time. 
+We construct three incremental cross-lingual ([ZH-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/ZH-EN), [JA-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/JA-EN), and [FR-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/FR-EN)) datasets for continual entity alignment task, in which the to-be-aligned KGs are growing independently over time. 
 
 The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 consecutive snapshots of a growing KG. 
 
@@ -19,7 +19,7 @@ The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 co
   |- rel_dict   # index for relations
 ```
 
-The test and validation data are changeless in our continual entity alignment setting, and can be found in the first snapshot (the `base/` folder). In following snapshots (the `batchX` folder), new triples are addede into KGs which brings more potential alignment (i.e. new test data).
+The test and validation data are changeless in our continual entity alignment setting, and can be found in the first snapshot (under `base/` folder). In the later snapshots (under `batchX` folder), new triples are added into KGs which brings more potential alignment (i.e. new test data).
 
 ## Environment
 
@@ -34,7 +34,7 @@ The essential packages and recommened version to run the code:
 
 ## Run ContEA
 
-We provide a demo file `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters are the ones to reproduce the results in paper. To run the demo file, enter `src/` and run
+We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters are the ones to reproduce the results in paper. To run the demo file, enter `src/` and run
 
 ```
 $ bash run.sh
