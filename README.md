@@ -25,13 +25,13 @@ We construct three incremental cross-lingual ([ZH-EN](https://github.com/nju-web
 
 The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 consecutive snapshots of two growing KGs. 
 
-```
- --- base       # snapshot 0
-  |- batch2     # snapshot 1
-  |- batch3     # snapshot 2
-  |- batch4     # snapshot 3
-  |- batch5     # snapshot 4
-  |- batch6     # snapshot 5
+```python
+ --- base/       # snapshot 0
+  |- batch2/     # snapshot 1
+  |- batch3/     # snapshot 2
+  |- batch4/     # snapshot 3
+  |- batch5/     # snapshot 4
+  |- batch6/     # snapshot 5
   |- ent_dict   # index for entities
   |- rel_dict   # index for relations
 ```
@@ -59,12 +59,12 @@ Replace `https://data.pyg.org/whl/torch-1.12.0+cu102.html` with your configured 
 
 Download this project and firstly create two folders `logs/` and `saved_model/` in the same directory with `src/`.
 
-```
- - ContEA     
-      |- logs   
-      |- saved_model    
-      |- datasets
-      |- src  
+```python
+ - ContEA/     
+     |- logs/   
+     |- saved_model/    
+     |- datasets/
+     |- src/  
 ```
 
 We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters can reproduce the results in paper. To run the demo script, enter `src/` and run:
