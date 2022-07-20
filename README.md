@@ -87,7 +87,7 @@ In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity 
 
 The training on the first snapshot at t = 0 is crucial for overall performance.
 
-## Acknowledgement
+## Acknowledgment
 
 ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow). We thank them for making the code open-sourced.
 
