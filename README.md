@@ -27,13 +27,13 @@ The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 co
 
 ```python
  --- base/       # snapshot 0
-  |- batch2/     # snapshot 1
-  |- batch3/     # snapshot 2
-  |- batch4/     # snapshot 3
-  |- batch5/     # snapshot 4
-  |- batch6/     # snapshot 5
-  |- ent_dict   # index for entities
-  |- rel_dict   # index for relations
+ |- batch2/      # snapshot 1
+ |- batch3/      # snapshot 2
+ |- batch4/      # snapshot 3
+ |- batch5/      # snapshot 4
+ |- batch6/      # snapshot 5
+ |- ent_dict     # index for entities
+ |- rel_dict     # index for relations
 ```
 
 The test and validation data are changeless in our continual entity alignment setting, and can be found in the first snapshot (under `base/` folder). In the later snapshots (under `batchX` folder), new triples are added into KGs as well as new potential alignment.
