@@ -73,6 +73,8 @@ We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyp
 $ bash run.sh
 ```
 
+### Hyperparameter Setting
+
 In our work, we set 𝛼 = 0.1, 𝛽 = 0.1, 𝑚 = 500, 𝜆 = 2.0. Both entity and relation dimension are 100. GNN layer number of the encoder is 2. We use grid search on important hyperparameters to find optimal values. They are:
 
 | Hyperparameter      | Values |
