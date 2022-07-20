@@ -2,6 +2,21 @@
 
 This repository is the official implementation of ContEA, the method proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
 
+> Entity alignment is a basic and vital technique in knowledge graph (KG) integration. 
+Over the years, research on entity alignment has resided on the assumption that KGs are static, which neglects the nature of growth of real-world KGs.
+As KGs grow, previous alignment results face the need to be revisited while new entity alignment waits to be discovered. 
+In this paper, we propose and dive into a realistic yet unexplored setting, 
+referred to as continual entity alignment.
+To avoid retraining an entire model on the whole KGs whenever new entities and triples come,
+we present a continual alignment method for this task.
+It reconstructs an entity's representation based on entity adjacency, 
+enabling it to generate embeddings for new entities quickly and inductively using their existing neighbors.
+It selects and replays partial pre-aligned entity pairs to train only parts of KGs while extracting trustworthy alignment for knowledge augmentation.
+As growing KGs inevitably contain non-matchable entities, different from previous works, 
+the proposed method employs bidirectional nearest neighbor matching to find new entity alignment and update old alignment.
+Furthermore, we also construct new datasets by simulating the growth of multilingual DBpedia.
+Extensive experiments demonstrate that our continual alignment method is more effective than baselines based on retraining or inductive learning.
+
 ![Framework](framework.png)
 
 ## Datasets
