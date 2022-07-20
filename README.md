@@ -89,7 +89,7 @@ The training on the first snapshot at t = 0 is crucial for overall performance.
 
 ## Acknowledgement
 
-ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow), we thank them for making code open-sourced.
+ContEA is designed upon the static entity alignment model [Dual-AMN](https://github.com/MaoXinn/Dual-AMN) (implemented in tensorflow). We thank them for making the code open-sourced.
 
 ## Citation
 
