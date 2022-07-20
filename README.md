@@ -30,11 +30,27 @@ The essential packages and recommened version to run the code:
 - python3 (>=3.7)
 - pytorch (1.11.0+cu113)
 - numpy   (1.21.5)
-- torch-scatter (2.0.9, better to install using **pip**)
+- torch-scatter (2.0.9, see the following)
 - scipy  (1.7.3)
 - tabulate  (0.8.9)
 
+You can install torch-scatter using this line:
+```
+$ pip install torch-scatter==2.0.9 -f https://data.pyg.org/whl/torch-1.12.0+cu102.html
+```
+Replace `https://data.pyg.org/whl/torch-1.12.0+cu102.html` with your configured torch version (check using `print(torch.__version__)`).
+
 ## Run ContEA
+
+Download this project and firstly create two folders `logs/` and `saved_model/` in the same directory with `src/`.
+
+```
+ - ContEA     
+      |- logs   
+      |- saved_model    
+      |- datasets
+      |- src  
+```
 
 We provide a demo script in `src/run.sh` to run ContEA on ZH-EN dataset. The hyperparameters can reproduce the results in paper. To run the demo script, enter `src/` and run:
 
