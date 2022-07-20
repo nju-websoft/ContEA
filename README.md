@@ -8,7 +8,7 @@ This repository is the official implementation of ContEA, the method proposed in
 
 We construct three incremental cross-lingual ([ZH-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/ZH-EN), [JA-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/JA-EN), and [FR-EN](https://github.com/nju-websoft/ContEA/tree/main/datasets/FR-EN)) datasets for continual entity alignment task, in which the to-be-aligned KGs are growing independently over time. 
 
-The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 consecutive snapshots of a growing KG. 
+The datasets can be downloaded in folder `datasets/`. Each dataset contains 6 consecutive snapshots of two growing KGs. 
 
 ```
  --- base       # snapshot 0
