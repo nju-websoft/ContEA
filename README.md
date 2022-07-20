@@ -95,15 +95,15 @@ ContEA is designed upon the static entity alignment model [Dual-AMN](https://git
 
 ```
 @inproceedings{ContEA,
-  title={Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs},
-  author={Wang, Yuxin and 
-          Cui, Yuanning and 
-          Liu, Wenqiang and 
-          Sun, Zequn and 
-          Jiang, Yiqiao and 
-          Han, Kexin and 
-          Hu, Wei},
-  booktitle={ISWC},
-  year={2022}
+  title     = {Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs},
+  author    = {Wang, Yuxin and 
+               Cui, Yuanning and 
+               Liu, Wenqiang and 
+               Sun, Zequn and 
+               Jiang, Yiqiao and 
+               Han, Kexin and 
+               Hu, Wei},
+  booktitle = {ISWC},
+  year      = {2022}
 }
 ```
