@@ -1,6 +1,6 @@
 # ContEA: Continual Entity Alignment
 
-This repository is the official implementation of ContEA, the method proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***]() at ISWC2022.
+This repository is the official implementation of ContEA, the method proposed in paper [***Facing Changes: Continual Entity Alignment for Growing Knowledge Graphs***](https://arxiv.org/abs/2207.11436) at ISWC2022.
 
 > Entity alignment is a basic and vital technique in knowledge graph (KG) integration. 
 Over the years, research on entity alignment has resided on the assumption that KGs are static, which neglects the nature of growth of real-world KGs.
